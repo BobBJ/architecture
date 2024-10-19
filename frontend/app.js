@@ -1,5 +1,4 @@
-const apiUrl = '/api/todos';  // Relative path for Azure Static Web Apps
-
+const apiUrl = 'https://zzwul079od.execute-api.eu-west-3.amazonaws.com/prod/todos';
 // Fetch todos
 function fetchTodos() {
     fetch(apiUrl)
