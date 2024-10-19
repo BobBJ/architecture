@@ -87,7 +87,7 @@ resource staticWebApp 'Microsoft.Web/staticSites@2021-02-01' = {
   name: staticAppName
   location: location
   properties: {
-    repositoryUrl: '<your-repo-url>'  // Make sure your GitHub repo for frontend is linked here
+    repositoryUrl: 'https://github.com/BobBJ/architecture'
     branch: 'main'
     appLocation: './frontend'
     apiLocation: './backend'
