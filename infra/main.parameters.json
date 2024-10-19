@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "sku": {
+        "name": "Standard",
+        "tier": "Standard"
+    },
+    "parameters": {
+        "location": {
+            "value": "centralus"
+        },
+        "cosmosAccountName": {
+            "value": "todocosmoseastus2"
+        },
+        "appServicePlanName": {
+            "value": "todo-plan-architecture-epita-int-plateform3"
+        },
+        "appName": {
+            "value": "todo-backend-architecture-epita-int-plateform3"
+        },
+        "staticAppName": {
+            "value": "todo-frontend-architecture-epita-int-plateform3"
+        },
+        "minInstances": {
+            "value": 1
+        },
+        "maxInstances": {
+            "value": 5
+        }
+    }
+}

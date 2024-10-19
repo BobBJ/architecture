@@ -51,7 +51,7 @@ resource cosmosDbContainer 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/c
     resource: {
       id: 'Todos'
       partitionKey: {
-        paths: ['/id'],
+        paths: ['/id']
         kind: 'Hash'
       }
     }

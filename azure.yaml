@@ -1,0 +1,24 @@
+name: my-todo-app
+metadata:
+  template: custom
+
+services:
+  frontend:
+    project: ./frontend
+    language: js
+    azureStaticWebApps: true
+    host: staticwebapp
+    build:
+      commands:
+        - npm install
+        - npm run build
+
+  backend:
+    project: ./backend
+    language: js
+    azureAppService: true
+    host: appservice
+
+infrastructure:
+  bicep:
+    path: ./infra/main.bicep

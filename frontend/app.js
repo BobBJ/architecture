@@ -1,4 +1,4 @@
-const apiUrl = '/api/todos';  // Relative path for Azure Static Web Apps
+const apiUrl = 'https://todo-backend-architecture-epita-int-plateform3.azurewebsites.net/api/todos';  // Update with the correct backend service URL
 
 // Fetch todos
 function fetchTodos() {
